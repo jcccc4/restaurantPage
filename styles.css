@@ -1,0 +1,27 @@
+body{ min-height:100vh; margin:0; position:relative; }
+.header{
+    position: absolute;
+    top:0;
+    left: 0;
+    width:100%;
+    display: flex;
+    justify-content: center;
+}
+.content{
+    color: red;
+    background-color: violet;
+}
+.navMenu{
+    display: flex;
+    gap: 10px;
+}
+
+.footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+  }
