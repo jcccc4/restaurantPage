@@ -9,39 +9,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _pageLoad_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(3);
-
-
-
-
-function Content(){
-    const header = document.querySelectorAll('.navMenu > div');
-    const content = document.querySelector('.content');
-    const contentDiv = document.createElement('div')
-    contentDiv.classList.add('contentBox')
-    content.appendChild(contentDiv)
-    contentDiv.textContent = ""
-    ;(0,_pageLoad_js__WEBPACK_IMPORTED_MODULE_0__["default"]) ('home');
-    header.forEach(element => {
-        element.addEventListener("click" , (e) =>{
-            const navClass = e.target.className;
-            contentDiv.textContent = "";
-            (0,_pageLoad_js__WEBPACK_IMPORTED_MODULE_0__["default"]) (navClass);
-           
-        })       
-    });
-}
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Content);
-
-/***/ }),
-/* 2 */
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
 function Logo(){
     const navMenu = document.querySelector('.navMenu');
     const logo = document.createElement('div')
@@ -71,6 +38,39 @@ function Header(){
 }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Header);
 
+
+/***/ }),
+/* 2 */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _pageLoad_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(3);
+
+
+
+
+function Content(){
+    const header = document.querySelectorAll('.navMenu > div');
+    const content = document.querySelector('.content');
+    const contentDiv = document.createElement('div')
+    contentDiv.classList.add('contentBox')
+    content.appendChild(contentDiv)
+    contentDiv.textContent = ""
+    ;(0,_pageLoad_js__WEBPACK_IMPORTED_MODULE_0__["default"]) ('home');
+    header.forEach(element => {
+        element.addEventListener("click" , (e) =>{
+            const navClass = e.target.className;
+            contentDiv.textContent = "";
+            (0,_pageLoad_js__WEBPACK_IMPORTED_MODULE_0__["default"]) (navClass);
+           
+        })       
+    });
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Content);
 
 /***/ }),
 /* 3 */
@@ -178,8 +178,8 @@ var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
 (() => {
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _components_Header_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
-/* harmony import */ var _components_Content_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
+/* harmony import */ var _components_Header_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var _components_Content_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
 
 
 
