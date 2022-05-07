@@ -1,16 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* { 
+    font-family: 'Roboto', sans-serif;
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+     box-sizing: border-box; 
+}
+
 body{ min-height:100vh; margin:0; position:relative; }
 .header{
-    position: absolute;
+    position: relative;
     top:0;
     left: 0;
     width:100%;
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color: white;
+    box-shadow: 0 1px  #D6D6D6;
+    z-index: 100;
 }
+
+.logo{
+    position: absolute;
+    left: 10px;
+}
+
+.navMenu{
+    height: 100%;
+    width: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.home, .about, .contact{
+    height: 30px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home:hover, .about:hover, .contact:hover{
+    background-color: #f5f3f4;
+    height: 30px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+.home:active, .about:active ,.contact:active{
+    background-color: #d3d3d3;
+}
+
 .content{
-    color: red;
-    background-color: violet;
+    color: black;
+    width: 100vw;
+    height: calc(100vh - 50px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('./img/rename.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
+
+.contentBox{
+    height: 60%;
+    width: 500px;
+    background: rgba(200, 200, 200, 0.6);
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, .5);
+    backdrop-filter: blur(2px);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.boxTitle, .boxDescription{
+    margin: 10px;
+}
+.boxTitle{
+    font-size: 30px;
+    margin: 30px;
+    font-weight: 400;
+}
+
+.boxDescription{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    align-items: center;
+    height: 100%;
+
+}
+.aboutRestaurant{
+    font-size: 25px;
+    width: 100%;
+    font-weight: 300;
+}
+
+.aboutDescription{
+    font-size: 18px;
+    width: 90%;
+    gap:10px;
+    line-height: 40px;
+    font-weight: 300;
+    height: 100%;
+    display:flex ;
+    align-items: center;
+    margin-bottom: 200px;
+    overflow: auto;
+}
+
 .navMenu{
     display: flex;
     gap: 10px;
@@ -25,3 +132,4 @@ body{ min-height:100vh; margin:0; position:relative; }
     color: white;
     text-align: center;
   }
+
