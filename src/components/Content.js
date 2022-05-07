@@ -1,30 +1,21 @@
-function Home(){
-    const contentBox =document.querySelector('.contentBox');
-    contentBox.textContent = ''
-    contentBox.innerHTML = '<div> HOME </div>'
-}
-
-
-
+import  Details from './pageLoad.js'
 
 
 
 function Content(){
     const header = document.querySelectorAll('.navMenu > div');
-    const content =document.querySelector('.content');
+    const content = document.querySelector('.content');
     const contentDiv = document.createElement('div')
     contentDiv.classList.add('contentBox')
     content.appendChild(contentDiv)
-
+    contentDiv.textContent = ""
+    Details ('home');
     header.forEach(element => {
-        element.addEventListener("click" , () =>{
-            const navClass = element.classList.value;
-            if(navClass === 'home'){
-                Home();
-            }
-
-
-
+        element.addEventListener("click" , (e) =>{
+            const navClass = e.target.className;
+            contentDiv.textContent = "";
+            Details (navClass);
+           
         })       
     });
 }
