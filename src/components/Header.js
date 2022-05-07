@@ -1,3 +1,10 @@
+function Logo(){
+    const navMenu = document.querySelector('.navMenu');
+    const logo = document.createElement('div')
+    logo.innerHTML = 'Insert Logo Here'
+    navMenu.appendChild(logo)
+}
+
 function Header(){
     const nav = ['Home', 'About', 'Contact'];
     const header = document.querySelector('.header');
@@ -11,8 +18,7 @@ function Header(){
         nav[i] = element;
     }
     navMenu.append(...nav)
-    
-    
     header.appendChild(navMenu)
+
 }
 export default Header;
