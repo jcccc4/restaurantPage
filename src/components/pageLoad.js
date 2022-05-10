@@ -25,7 +25,7 @@ function Details(title){
         contentDescription.innerHTML = 'Insert Description Here' 
     }else if(title === 'contact'){    
         contentTitle.innerHTML = 'Insert Restaurant Title Here'
-        contentDescription.innerHTML = 'Insert Description Here'
+        contentDescription.innerHTML = 'Insert Contacts Here'
     }
     
     
