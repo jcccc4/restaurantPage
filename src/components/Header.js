@@ -1,5 +1,5 @@
 function Logo(){
-    const navMenu = document.querySelector('.navMenu');
+    const navMenu = document.querySelector('.header');
     const logo = document.createElement('div')
     logo.classList.add('logo');
     logo.innerHTML = 'Insert Logo Here';

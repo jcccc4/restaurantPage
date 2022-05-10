@@ -10,7 +10,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 function Logo(){
-    const navMenu = document.querySelector('.navMenu');
+    const navMenu = document.querySelector('.header');
     const logo = document.createElement('div')
     logo.classList.add('logo');
     logo.innerHTML = 'Insert Logo Here';
@@ -102,9 +102,34 @@ function Details(title){
         aboutdescription.innerHTML = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ullamcorper nunc augue, sed sodales lacus molestie vel. Pellentesque vestibulum commodo ligula. Nunc tincidunt consectetur velit.'
         
         contentDescription.append(about, aboutdescription)
-    }else if(title === 'about'){    
+    }else if(title === 'about'){   
+       
+
+
+
         contentTitle.innerHTML = 'Insert Restaurant Title Here'
         contentDescription.innerHTML = 'Insert Description Here'
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     }else if(title === 'contact'){    
         contentTitle.innerHTML = 'Insert Restaurant Title Here'
         contentDescription.innerHTML = 'Insert Description Here'
